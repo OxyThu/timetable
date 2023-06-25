@@ -1,5 +1,6 @@
 {
-  "name": "ecms_web",
+  "homepage": "https://oxythu.github.io/timetable",
+  "name": "timetable",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
