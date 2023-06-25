@@ -1,0 +1,11 @@
+.text {
+    font-style: normal;
+    font-weight: 800;
+    font-family: 'Inter';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.selectBox{
+    width: 300px;
+}

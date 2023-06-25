@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Choose_Year from "./pages/choose_year/Choose_Year";
+import Daily from "./pages/Daily/Daily";
+import { getCookie } from "./utils/common";
+import available_class from "./utils/data/class";
 
 function App() {
+  const [academic, setAcademic] = useState(false);
+
+  useEffect(() => {
+    let index = getCookie("index");
+    let cookie = getCookie("academic");
+
+    if(cookie && index){
+      let haveAcademic = available_class[index].classes.filter((cl) => {
+        return cl.class_code === cookie;
+      })
+      if(haveAcademic){
+        setAcademic(true);
+      }
+    }
+  }, [academic])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     { academic ? <Daily/> : <Choose_Year/>}
+    </>
   );
 }
 
