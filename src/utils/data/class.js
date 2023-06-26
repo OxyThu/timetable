@@ -9,7 +9,7 @@ const available_class = [
             },
             {
                 class_name : "Section (B)",
-                class_code : "test1",
+                class_code : "first_yearB",
             }
         ]
     },
@@ -19,11 +19,11 @@ const available_class = [
         classes : [
             {
                 class_name : "Section (A)",
-                class_code : "test2",
+                class_code : "second_junior_A",
             },
             {
                 class_name : "Section (B)",
-                class_code : "test3",
+                class_code : "second_junior_B",
             }
         ]
     },
@@ -33,17 +33,35 @@ const available_class = [
         classes : [
             {
                 class_name : "CS",
-                class_code : "test4",
+                class_code : "second_senior_CS",
             },
             {
                 class_name : "CT",
-                class_code : "test5",
+                class_code : "second_senior_CT",
             }
         ]
     },
     {
-        academic_year : "Fourth Year",
+        academic_year : "Third Year",
         code : "3",
+        classes : [
+            {
+                class_name : "CS (A)",
+                class_code : "third_cs_A",
+            },
+            {
+                class_name : "CS (B)",
+                class_code : "third_cs_B",
+            },
+            {
+                class_name : "CT",
+                class_code : "third_ct",
+            },
+        ]
+    },
+    {
+        academic_year : "Fourth Year",
+        code : "4",
         classes : [
             {
                 class_name : "CS",
@@ -51,7 +69,7 @@ const available_class = [
             },
             {
                 class_name : "CT",
-                class_code : "test6",
+                class_code : "fourth_yearCT",
             },
         ]
     }

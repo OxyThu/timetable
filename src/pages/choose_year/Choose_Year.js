@@ -43,7 +43,7 @@ function Category_List() {
                     <FormControl>
                         <InputLabel id="demo-simple-select-label">Select Your Academic Year</InputLabel>
                         <Select
-                            labelId="demo-simple-select-label"c
+                            labelId="demo-simple-select-label"
                             id="demo-simple-select"
                             value={academic}
                             label="Select Your Academic Year"

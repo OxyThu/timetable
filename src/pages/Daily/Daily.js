@@ -31,7 +31,16 @@ function Daily() {
             if (cookie) {
                 switch (cookie) {
                     case "first_yearA": setTimeTable(timetable.first_yearA[day].subject); break;
+                    case "first_yearB": setTimeTable(timetable.first_yearB[day].subject); break;
+                    case "second_junior_A": setTimeTable(timetable.second_junior_A[day].subject); break;
+                    case "second_junior_B": setTimeTable(timetable.second_junior_B[day].subject); break;
+                    case "second_senior_CS": setTimeTable(timetable.second_senior_CS[day].subject); break;
+                    case "second_senior_CT": setTimeTable(timetable.second_senior_CT[day].subject); break;
+                    case "third_cs_A": setTimeTable(timetable.third_cs_A[day].subject); break;
+                    case "third_cs_B": setTimeTable(timetable.third_cs_B[day].subject); break;
+                    case "third_ct": setTimeTable(timetable.third_ct[day].subject); break;
                     case "fourth_yearCS": setTimeTable(timetable.fourth_yearCS[day].subject); break;
+                    case "fourth_yearCT": setTimeTable(timetable.fourth_yearCT[day].subject); break;
                     default: setTimeTable(timetable.test[day].subject); break;
                 }
             }
