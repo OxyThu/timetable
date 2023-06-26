@@ -37,7 +37,8 @@ function NavBar() {
                                  
                             </Typography>
                             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                တနားချေပါနန်း မကြာခင်လုပ်လိုက်ပါမေ
+                                တနားချေပါနန်း မကြာခင်လုပ်လိုက်ပါမေ <br/>
+                                အာလုံးသူကိုချိုက်ပါရေ 😍
                             </Typography>
                         </Box>
                     </Modal>
