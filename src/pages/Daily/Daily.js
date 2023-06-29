@@ -3,6 +3,7 @@ import NavBar from '../../common_components/NavBar';
 import './styles/daily.css';
 import styles from './styles/daily';
 import { timetable, time } from '../../utils/data/timetable';
+import holiday_data from '../../utils/data/holiday';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { getCookie, getDay } from '../../utils/common';
@@ -10,21 +11,30 @@ import ArrowCircleRightSharpIcon from '@mui/icons-material/ArrowCircleRightSharp
 import ArrowCircleLeftSharpIcon from '@mui/icons-material/ArrowCircleLeftSharp';
 import Moment from 'react-moment';
 
+
 function Daily() {
     const [timeTable, setTimeTable] = useState([]);
     const [dayName, setDayName] = useState();
     const [ date, setDate] = useState();
     const [ count, setCount] = useState(0);
+    // const [ holiday, setHoliday] =useState([]);
     useEffect(() => {
         let dayObj = getDay(count);
         setDayName(dayObj.name);
         let day = dayObj.code;
         setDate(dayObj.date);
-        // let day = 2;
+        let holiday = holiday_data(dayObj.date);
+        // setHoliday(holiday_d);
+
+        // setHoliday(date);
         if(day === 7){
             // time[0] = "RELAX";
             setTimeTable([
                 "HAPPY WEEKEND 👻❤️😙🍕"
+            ])
+        }else if(holiday.length > 0) {
+            setTimeTable([
+                holiday[0].name
             ])
         }else{
             let cookie = getCookie("academic");

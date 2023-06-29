@@ -14,7 +14,6 @@ import available_class from "./data/class"
 
   export const getDay = (count) => {
     const d = new Date();
-    console.log("current Number", count);
     d.setDate(d.getDate() + count);
     let day = d.getDay();
     let dayObj = {};
