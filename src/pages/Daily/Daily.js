@@ -114,8 +114,6 @@ function Daily() {
                                     </div>
                                 )
                             })}
-
-
                         </Grid>
                     </Grid>
                 </Grid>
