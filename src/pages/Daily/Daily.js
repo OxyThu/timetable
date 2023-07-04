@@ -17,18 +17,13 @@ function Daily() {
     const [dayName, setDayName] = useState();
     const [ date, setDate] = useState();
     const [ count, setCount] = useState(0);
-    // const [ holiday, setHoliday] =useState([]);
     useEffect(() => {
         let dayObj = getDay(count);
         setDayName(dayObj.name);
         let day = dayObj.code;
         setDate(dayObj.date);
         let holiday = holiday_data(dayObj.date);
-        // setHoliday(holiday_d);
-
-        // setHoliday(date);
         if(day === 7){
-            // time[0] = "RELAX";
             setTimeTable([
                 "HAPPY WEEKEND 👻❤️😙🍕"
             ])
@@ -59,8 +54,8 @@ function Daily() {
     }, [count])
 
     function decrease(){
-        if(count <= 0){
-            setCount(6);
+        if(count <= -6){
+            setCount(0);
         }else{
             setCount(count-1);
         }
