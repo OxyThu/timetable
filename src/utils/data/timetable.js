@@ -298,25 +298,25 @@ export const timetable = {
         {
             day : "Tuesday",
             subject : [
-                "Eng","CS-4257" ,"Sayar Thaung", "CST-4125","OS-4213",null, null,
+                "Eng","CS-4257" ,"CS-4225", "CST-4224","OS-4213",null, null,
             ]
         },
         {
             day: "Wednesday",
             subject : [
-                "CS-4124", null,"CST-4242","CS-4257",null,null, null, 
+                "CS-4225", "CS-4224","CST-4242","CS-4257",null,null, null, 
             ],
         },
         {
             day : "Thursday",
             subject : [
-                null,"Eng(LAB)","Eng(LAB)", "CST-4125","CG-4211","CG-4211", null
+                "CS-4225","Eng(LAB)","Eng(LAB)", null,"CG-4211","CG-4211", null
             ]
         },
         {
             day : "Friday",
             subject : [
-                "CG-4211","CG-4211", "CST-4125","CST-4242", "CST-4242",null, null,
+                "CG-4211","CG-4211", "CST-4224","CST-4242", "CST-4242",null, null,
             ]
         },
     ],
