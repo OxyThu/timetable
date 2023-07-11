@@ -298,7 +298,7 @@ export const timetable = {
         {
             day : "Tuesday",
             subject : [
-                "Eng", null,"CS-4257", "CST-4125","OS-4213",null, null,
+                "Eng","CS-4257" ,"Sayar Thaung", "CST-4125","OS-4213",null, null,
             ]
         },
         {
